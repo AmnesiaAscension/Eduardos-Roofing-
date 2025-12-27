@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo's Roofing | South Houston Roof Repair & Replacement | (832) 461-7957</title>
+    <meta name="description" content="Expert roofing and waterproofing services in South Houston, TX. 5-star rated local contractor specializing in leaks, storm damage, and replacements. Get your free inspection today!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      "name": "Eduardo's Roofing",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "409 Betty St",
+        "addressLocality": "South Houston",
+        "addressRegion": "TX",
+        "postalCode": "77587",
+        "addressCountry": "US"
+      },
+      "telephone": "+18324617957",
+      "url": "https://eduardosroofing.com",
+      "image": "https://picsum.photos/id/1070/1600/900",
+      "priceRange": "$$",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "9"
+      }
+    }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .faq-item.active .faq-answer { max-height: 500px; }
+        .faq-item.active .chevron { transform: rotate(180deg); }
+        .chevron { transition: transform 0.3s ease; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body class="bg-white text-slate-900 selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-blue-700 p-3 shadow-2xl flex justify-around items-center border-t border-blue-600">
+        <a href="tel:8324617957" class="flex-1 bg-white text-blue-700 font-bold py-4 px-4 rounded-xl flex items-center justify-center gap-2 text-lg shadow-lg active:scale-95 transition-transform">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            GET FREE INSPECTION
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <span class="text-2xl font-black text-blue-700 tracking-tighter uppercase italic">EDUARDO'S <span class="text-slate-900">ROOFING</span></span>
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#services" class="text-slate-600 hover:text-blue-700 font-bold transition-colors">Services</a>
+                    <a href="#why-us" class="text-slate-600 hover:text-blue-700 font-bold transition-colors">Why Us</a>
+                    <a href="#reviews" class="text-slate-600 hover:text-blue-700 font-bold transition-colors">Reviews</a>
+                    <a href="tel:8324617957" class="bg-blue-700 text-white px-6 py-3 rounded-full font-black hover:bg-blue-800 transition-all flex items-center gap-2 shadow-md hover:shadow-blue-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        (832) 461-7957
+                    </a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-slate-900 p-2 focus:outline-none">
+                        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 py-6 space-y-4 shadow-xl">
+            <a href="#services" class="block text-xl font-bold text-slate-800 py-2 border-b border-slate-50">Services</a>
+            <a href="#why-us" class="block text-xl font-bold text-slate-800 py-2 border-b border-slate-50">Why Us</a>
+            <a href="#reviews" class="block text-xl font-bold text-slate-800 py-2 border-b border-slate-50">Reviews</a>
+            <a href="tel:8324617957" class="block text-blue-700 font-black text-2xl pt-2">(832) 461-7957</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative py-20 md:py-32 overflow-hidden bg-slate-900">
+            <div class="absolute inset-0 opacity-30 pointer-events-none">
+                <img src="https://picsum.photos/id/1070/1600/900" alt="Roofing Professional" class="w-full h-full object-cover">
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 bg-blue-600/20 border border-blue-500/30 text-blue-400 px-4 py-1.5 rounded-full text-xs md:text-sm font-black mb-8 uppercase tracking-wider">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        Locally Owned & Operated in South Houston
+                    </div>
+                    <h1 class="text-4xl md:text-7xl font-black text-white leading-[1.1] mb-8">
+                        Expert Roof Repair & <span class="text-blue-500">Replacement</span> in South Houston
+                    </h1>
+                    <p class="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
+                        Don't let a small leak turn into a major disaster. Eduardo's Roofing provides fast, reliable, and fair-priced solutions built for the Texas Gulf Coast.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5">
+                        <a href="tel:8324617957" class="inline-flex items-center justify-center bg-blue-600 text-white px-10 py-5 rounded-2xl font-black text-xl hover:bg-blue-700 transition-all shadow-xl hover:shadow-blue-500/30 active:scale-95 group">
+                            Get Free Inspection
+                            <svg class="ml-2 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <div class="flex items-center gap-4 px-6 py-4 bg-slate-800/60 backdrop-blur-sm rounded-2xl border border-slate-700 shadow-lg">
+                            <div class="flex text-yellow-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            </div>
+                            <span class="text-white font-black text-lg">5.0 Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Strip -->
+        <div class="bg-slate-50 border-y border-slate-200 py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="space-y-1">
+                        <p class="text-3xl font-black text-slate-900 tracking-tight">5.0 Stars</p>
+                        <p class="text-xs text-slate-500 uppercase tracking-[0.2em] font-bold">9 Reviews</p>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-3xl font-black text-slate-900 tracking-tight">24 Hours</p>
+                        <p class="text-xs text-slate-500 uppercase tracking-[0.2em] font-bold">Open Daily</p>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-3xl font-black text-slate-900 tracking-tight">Same Day</p>
+                        <p class="text-xs text-slate-500 uppercase tracking-[0.2em] font-bold">Leak Response</p>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-3xl font-black text-slate-900 tracking-tight">FREE</p>
+                        <p class="text-xs text-slate-500 uppercase tracking-[0.2em] font-bold">Inspections</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6">Professional Roofing Services</h2>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full mb-8"></div>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    Complete roofing and waterproofing solutions for South Houston homeowners and businesses. High quality work, fair prices.
+                </p>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="group p-10 bg-white border-2 border-slate-50 rounded-[2.5rem] hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-100 transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-blue-700 transition-colors">Roof Repair</h3>
+                    <p class="text-slate-600 leading-relaxed font-medium">Stopping leaks fast to protect your home's interior from costly water damage and structural issues.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="group p-10 bg-white border-2 border-slate-50 rounded-[2.5rem] hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-100 transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-blue-700 transition-colors">Roof Replacement</h3>
+                    <p class="text-slate-600 leading-relaxed font-medium">Complete tear-offs and high-quality installations for long-term peace of mind and curb appeal.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="group p-10 bg-white border-2 border-slate-50 rounded-[2.5rem] hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-100 transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-blue-700 transition-colors">Emergency Roofing</h3>
+                    <p class="text-slate-600 leading-relaxed font-medium">24/7 rapid response for storm damage and critical leaks when you need help most. We are on standby.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="group p-10 bg-white border-2 border-slate-50 rounded-[2.5rem] hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-100 transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-blue-700 transition-colors">Flat Roofing</h3>
+                    <p class="text-slate-600 leading-relaxed font-medium">Specialized durable solutions for residential and commercial flat roof systems including TPO and coatings.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="group p-10 bg-white border-2 border-slate-50 rounded-[2.5rem] hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-100 transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-blue-700 transition-colors">Leak Detection</h3>
+                    <p class="text-slate-600 leading-relaxed font-medium">Precision detection and sealing using advanced thermal techniques to ensure your roof stays bone dry.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="group p-10 bg-white border-2 border-slate-50 rounded-[2.5rem] hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-100 transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4 group-hover:text-blue-700 transition-colors">Waterproofing</h3>
+                    <p class="text-slate-600 leading-relaxed font-medium">Advanced protective coatings to extend the life of your roofing system and prevent oxidation and cracks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why-us" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-20">
+                <div class="flex-1">
+                    <h2 class="text-4xl md:text-5xl font-black text-white mb-8">Why South Houston Trusts Eduardo's Roofing</h2>
+                    <div class="space-y-10 mt-12">
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center text-blue-400 border border-blue-500/20">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">Honest & Professional</h4>
+                                <p class="text-slate-400 text-lg leading-relaxed">We explain every repair clearly with photos and provide fair pricing without high-pressure sales tactics. No surprises.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center text-blue-400 border border-blue-500/20">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">Rapid Response Time</h4>
+                                <p class="text-slate-400 text-lg leading-relaxed">When storm damage hits or leaks appear, we show up fast. We prioritize emergency calls to mitigate interior damage.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center text-blue-400 border border-blue-500/20">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">Local Area Expertise</h4>
+                                <p class="text-slate-400 text-lg leading-relaxed">We know the specific wind and humidity challenges of Houston. We install roofs built to withstand extreme Texas weather.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <div class="rounded-[3rem] overflow-hidden border-8 border-slate-800 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://picsum.photos/id/1031/600/800" alt="Worker on roof" class="w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-8 -left-8 bg-blue-700 p-10 rounded-[2.5rem] shadow-2xl max-w-xs -rotate-2">
+                        <p class="text-5xl font-black mb-2 italic">5.0/5</p>
+                        <p class="text-sm font-black uppercase tracking-[0.2em] text-blue-200">Customer Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Primary Offer Section -->
+        <section class="py-24 bg-blue-700 relative overflow-hidden">
+            <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-blue-600 rounded-full blur-3xl opacity-50"></div>
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
+                <h2 class="text-5xl md:text-7xl font-black mb-8 italic">Free Professional Roof Inspection</h2>
+                <p class="text-xl md:text-2xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed font-semibold">
+                    Wondering if your roof survived the latest storm? Let Eduardo take a look. No obligation, just expert advice from a pro.
+                </p>
+                <div class="flex flex-col items-center gap-8">
+                    <a href="tel:8324617957" class="inline-flex items-center gap-4 bg-white text-blue-700 px-12 py-6 rounded-[2rem] font-black text-2xl md:text-3xl hover:scale-105 transition-transform shadow-2xl active:scale-95 group">
+                        <svg class="group-hover:animate-pulse" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        Schedule Now
+                    </a>
+                    <p class="text-blue-200 font-black uppercase tracking-widest">Available 24/7 in South Houston</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-6">What Your Neighbors Say</h2>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-12 rounded-[3rem] border-2 border-slate-100 italic relative">
+                    <div class="flex text-yellow-500 mb-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <p class="text-2xl text-slate-800 leading-relaxed mb-8 font-medium">"Eduardo showed up fast and fixed our leak the same day. Highly recommend."</p>
+                    <p class="text-blue-700 font-black not-italic text-lg">— Local Homeowner</p>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-12 rounded-[3rem] border-2 border-slate-100 italic relative">
+                    <div class="flex text-yellow-500 mb-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <p class="text-2xl text-slate-800 leading-relaxed mb-8 font-medium">"Very professional and honest. Explained everything clearly and the price was fair."</p>
+                    <p class="text-blue-700 font-black not-italic text-lg">— Satisfied Customer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-24 bg-slate-50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
+                    <p class="text-slate-500 font-bold uppercase tracking-widest text-sm">Got Questions? We Have Answers.</p>
+                </div>
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item bg-white rounded-3xl border-2 border-slate-100 overflow-hidden active">
+                        <button class="w-full flex justify-between items-center p-8 text-left hover:bg-slate-50 transition-colors focus:outline-none">
+                            <span class="text-xl font-black text-slate-900">How do I know if I need a full roof replacement or just a repair?</span>
+                            <svg class="chevron text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-8 pb-8 text-slate-600 leading-relaxed text-lg font-medium border-t border-slate-50 pt-4">
+                                Our free inspection identifies the root cause. If damage is localized (like a few shingles), a repair is usually sufficient. If the underlayment is failing or age has compromised the entire system, we provide honest replacement recommendations with no fluff.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="faq-item bg-white rounded-3xl border-2 border-slate-100 overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-8 text-left hover:bg-slate-50 transition-colors focus:outline-none">
+                            <span class="text-xl font-black text-slate-900">Do you help with roofing insurance claims?</span>
+                            <svg class="chevron text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-8 pb-8 text-slate-600 leading-relaxed text-lg font-medium border-t border-slate-50 pt-4">
+                                Yes. We understand the confusion storm damage causes. We provide documented inspection reports and photos to help you navigate the process with your insurance provider smoothly.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="faq-item bg-white rounded-3xl border-2 border-slate-100 overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-8 text-left hover:bg-slate-50 transition-colors focus:outline-none">
+                            <span class="text-xl font-black text-slate-900">How long does a typical roof replacement take?</span>
+                            <svg class="chevron text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-8 pb-8 text-slate-600 leading-relaxed text-lg font-medium border-t border-slate-50 pt-4">
+                                Most residential roof replacements in South Houston are completed in 1-2 days, depending on weather conditions and house size. We work efficiently to minimize disruption to your family.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="faq-item bg-white rounded-3xl border-2 border-slate-100 overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-8 text-left hover:bg-slate-50 transition-colors focus:outline-none">
+                            <span class="text-xl font-black text-slate-900">Are you locally owned and operated?</span>
+                            <svg class="chevron text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="px-8 pb-8 text-slate-600 leading-relaxed text-lg font-medium border-t border-slate-50 pt-4">
+                                Absolutely. Eduardo's Roofing is based right here in South Houston at 409 Betty St. We are your neighbors and we stand by every single shingle we install.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Area -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-20 items-center">
+                <div class="flex-1">
+                    <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-8 italic uppercase">Where We Work</h2>
+                    <p class="text-xl text-slate-600 mb-10 leading-relaxed font-medium">
+                        Based in the heart of South Houston, we provide rapid roofing services to our community and neighboring cities across the metro area.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-10">
+                        <div class="flex items-center gap-3 text-slate-700 font-black text-lg">
+                            <svg class="text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            South Houston, TX
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-700 font-black text-lg">
+                            <svg class="text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Houston, TX
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-700 font-black text-lg">
+                            <svg class="text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Pasadena, TX
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-700 font-black text-lg">
+                            <svg class="text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Deer Park, TX
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-700 font-black text-lg">
+                            <svg class="text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Galena Park, TX
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-700 font-black text-lg">
+                            <svg class="text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Zips: 77587, 77017, 77502
+                        </div>
+                    </div>
+                    <div class="mt-12 p-10 bg-slate-50 rounded-[2.5rem] border-2 border-slate-100 flex flex-col sm:flex-row items-center gap-8 shadow-inner">
+                        <div class="w-16 h-16 bg-white text-blue-600 rounded-2xl flex items-center justify-center shadow-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-black text-slate-900 mb-1">Service Hours</h4>
+                            <p class="text-slate-600 font-bold text-lg leading-relaxed">Open 24 Hours - Available 24/7 for roofing emergencies and urgent inspections.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 w-full h-[500px] bg-slate-100 rounded-[3rem] overflow-hidden grayscale border-4 border-slate-50 shadow-2xl relative">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-400 p-12 text-center">
+                        <svg class="mb-6 opacity-30" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <p class="text-2xl font-black text-slate-500 mb-2">409 Betty St</p>
+                        <p class="text-lg font-bold">South Houston, TX 77587</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-24 pb-40 md:pb-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
+            <div>
+                <span class="text-3xl font-black text-blue-500 tracking-tighter block mb-8 uppercase italic">Eduardo's Roofing</span>
+                <p class="text-slate-400 leading-relaxed text-lg font-medium">
+                    The highest-rated local roofing and waterproofing experts in the South Houston area. Professional service, honest pricing, and local dedication since day one.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-2xl font-black mb-8 border-b border-blue-600/30 pb-4 inline-block">Contact Us</h4>
+                <ul class="space-y-6">
+                    <li class="flex items-center gap-4 text-slate-400 text-lg font-bold">
+                        <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <a href="tel:8324617957" class="hover:text-blue-400 transition-colors">(832) 461-7957</a>
+                    </li>
+                    <li class="flex items-start gap-4 text-slate-400 text-lg font-bold">
+                        <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-blue-500 mt-1 flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <span>409 Betty St,<br>South Houston, TX 77587</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-2xl font-black mb-8 border-b border-blue-600/30 pb-4 inline-block">Quick Links</h4>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+                    <a href="#services" class="text-slate-400 hover:text-white font-bold transition-colors">Services</a>
+                    <a href="#why-us" class="text-slate-400 hover:text-white font-bold transition-colors">Why Us</a>
+                    <a href="#reviews" class="text-slate-400 hover:text-white font-bold transition-colors">Reviews</a>
+                    <a href="tel:8324617957" class="text-slate-400 hover:text-white font-bold transition-colors">Free Quote</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 border-t border-slate-800 text-center text-slate-500 text-sm font-bold uppercase tracking-widest">
+            <p>&copy; 2024 Eduardo's Roofing. All rights reserved. | Built in South Houston, TX</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Toggle Logic
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const button = item.querySelector('button');
+            button.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items
+                faqItems.forEach(otherItem => otherItem.classList.remove('active'));
+                
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Close mobile menu on click of any link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
